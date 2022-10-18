@@ -18,7 +18,7 @@ export default function DeletePatient() {
         console.log(identityNumber)
         let patientService = new PatientService()
         patientService.deletePatient(identityNumber)
-        alert("Hasta silme işlemi başarılı...")
+        alert("Hasta silme işlemi başarılı..")
         window.location.href = "/";
     }
 
