@@ -15,7 +15,7 @@ export default function AddPatient() {
         isSick: true,
         hospitalizedCurrently: true,
         inIcuCurrently: true,
-        pending: true
+        pending:true 
     }
 
     const schema = Yup.object({

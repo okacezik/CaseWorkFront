@@ -13,4 +13,12 @@ export default class PatientService{
     deletePatient(identityNumber){
         return axios.delete("https://localhost:44311/api/Patients/delete?identityNumber="+identityNumber)
     }
+
+    getAllPatientsDetails(){
+        return axios.get("https://localhost:44311/api/Patients/getAllPatientsDetails")
+    }
+
+    getAllPostitivePatients(){
+        return axios.get("https://localhost:44311/api/Patients/getAllPositivePatients")
+    }
 }

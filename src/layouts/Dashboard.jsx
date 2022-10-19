@@ -7,6 +7,8 @@ import { Route, Routes } from 'react-router-dom';
 import Operations from './Operations';
 import DeletePatient from '../pages/DeletePatient';
 import LogInPage from '../pages/LogInPage';
+import PatientsDetails from '../pages/PatientsDetails';
+import PositivePatients from '../pages/PositivePatients';
 
 export default function Dashboard() {
     const [isEntry, setIsEntry] = useState(false)
@@ -25,9 +27,11 @@ export default function Dashboard() {
                         </Col>
                         <Col xs={6}>
                             <Routes>
-                                <Route exact path='/' element={<ListPatient />} />
-                                <Route exact path='/add' element={<AddPatient />} />
-                                <Route exact path='/delete' element={<DeletePatient />} />
+                                <Route exact path = '/' element={<ListPatient />} />
+                                <Route exact path = '/add' element={<AddPatient />} />
+                                <Route exact path = '/delete' element={<DeletePatient />} />
+                                <Route exact path = '/getdetails' element={<PatientsDetails />} />
+                                <Route exact path = '/positives' element={<PositivePatients/>} />
                             </Routes>
                         </Col>
                     </Row>

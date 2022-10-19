@@ -1,16 +1,17 @@
-import React, { useState, useEffect } from 'react'
-import PatientService from '../services/PatientService'
+import React,{useState,useEffect} from 'react'
 import { Header } from 'semantic-ui-react'
+import PatientService from '../services/PatientService'
 import OTable from '../utilities/OTable'
 
-export default function ListPatient() {
+export default function PositivePatients() {
 
     const [patients, setPatients] = useState([])
-
+    
     useEffect(() => {
         let patientService = new PatientService()
-        patientService.getAllPatients().then(result => setPatients(result.data.data))
+        patientService.getAllPostitivePatients().then(result => setPatients(result.data.data))
     }, [])
+    
 
     return (
         <div>

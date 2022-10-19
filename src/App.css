@@ -6,12 +6,12 @@
   width: 65%;
 }
 
-.operations{
-  width: 100%;
-}
-
 .editLog{
   align-items: center;
   width: 50%;
   margin-left: 10em;
+}
+
+.operations{
+  font-size: 20px;
 }
