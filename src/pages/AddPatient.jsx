@@ -1,7 +1,7 @@
-import React,{useEffect} from 'react'
+import React from 'react';
 import { Field, Form, Formik } from 'formik';
 import { FormField } from "semantic-ui-react";
-import { Header } from 'semantic-ui-react'
+import { Header } from 'semantic-ui-react';
 import * as Yup from 'yup';
 import Button from 'react-bootstrap/Button';
 import PatientService from '../services/PatientService';
@@ -36,7 +36,6 @@ export default function AddPatient() {
         alert("hasta ekleme işlemi başarılı...")
         window.location.href = "/";
     }
-
 
     return (
         <div>
